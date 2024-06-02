@@ -97,11 +97,38 @@ nav button{
     padding: 0.5vh 0.5vh;
     font-size: 1.2vw;
 }
+
+#bottom-nav{
+    background-color: #111111;
+    height: 0%;
+    position: absolute;
+    transition: all ease 0.5s ;
+    display: flex;
+    align-items: flex-start;
+    justify-content:center ;
+    border-bottom: 1px solid #dadada ;
+    width:79%;
+    bottom: 0%;
+    gap:3vw;
+
+}
+nav:hover #bottom-nav{
+    height: 100%;
+    bottom: -100%;
+}
+.order-class h4 {
+    font-size: 0.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-weight: 400;
+}
 nav button h1{
     font-size: 1.2vw;
 }
 nav button svg{
     width: 3vw;
-    height: 2vw;
+    height: 3vw;
     
 }
