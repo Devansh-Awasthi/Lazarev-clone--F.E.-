@@ -12,6 +12,7 @@ html , body{
 #p1{
     height:100vh;
     width:100%;
+    padding-top: 50px;
     background-color: #111111;
     display: flex;
     justify-content: center;
@@ -31,8 +32,8 @@ html , body{
     background-color:#0DA34E;
     border-radius: 50%;
 }
-#p1 h1 svg :hover {
-    rotate:30 deg;
+#p1 h1 span:hover #p1 h1 span{
+    transform: rotate(30deg);
 }
 #p1 p{
     margin-top: 2vw;
@@ -69,6 +70,7 @@ nav{
 justify-content: space-between;
 align-items: center;
 padding: 2vw 10.4vw;
+padding-bottom: 1vw;
 }
 nav h1{
     font-size: 1.7vw;
@@ -83,21 +85,30 @@ gap:1.6vw;
 
 }
 #options h4{
-    font-size: 1.7vh;
+    font-size: 1.8vh;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
 }
 nav button{
     background-color: #0DA34E;
     color: white;
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 50px;
-    padding: 0.5vh 0.5vh;
+    padding: 10px 10px;
     font-size: 1.2vw;
+    border: none;
 }
-
+nav button h6{
+    font-size: 1vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+nav button svg{
+    width: 1vw;
+    height: 1vw;
+    margin-left: 20px;
+}
 #bottom-nav{
     background-color: #111111;
     height: 0%;
@@ -109,26 +120,31 @@ nav button{
     border-bottom: 1px solid #dadada ;
     width:79%;
     bottom: 0%;
-    gap:3vw;
+    margin-bottom: 0;
+    gap:3.2vw;
+    padding-left:3vw;
 
 }
 nav:hover #bottom-nav{
-    height: 100%;
-    bottom: -100%;
+    height: 130%;
+    bottom: -130%;
+}
+nav:hover .order-class h4{
+    opacity: 1;
+    
 }
 .order-class h4 {
     font-size: 0.8vw;
+    overflow: hidden;
     display: flex;
     align-items: center;
+    transition: all ease 0.5s ;
     justify-content: space-between;
-    
+    margin-bottom: 0.4vw;
     font-weight: 400;
+    opacity: 0;
 }
-nav button h1{
-    font-size: 1.2vw;
-}
-nav button svg{
-    width: 3vw;
-    height: 3vw;
-    
+.order-class h4 span{
+    display:inline-block;
+
 }
