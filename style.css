@@ -84,7 +84,6 @@ nav {
   background-color: #111;
   z-index: 9;
     color: #ffffff;
-    padding-bottom: 9px;
   border-bottom: 1px solid #fff;
 }
 nav h1 {
@@ -109,24 +108,23 @@ align-items: center; */
   font-size: 0.73vw;
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 1vw;
+  margin-bottom: 2.6vw;
 }
 
 .options h5 {
-  color: #fff;
   /* margin-bottom: 1vw; */
   /* background-color: red; */
-  padding: 0;
   display: none;
   overflow: hidden;
 }
 
 .options h5 span{
-    color: #fff;
+
+  /* background-color: red; */
   font-size: 0.77vw;
   font-weight: 400;
   transform: translateY(25px);
-
+  display: inline-block;
 }
 nav button {
   background-color: #0da34e;

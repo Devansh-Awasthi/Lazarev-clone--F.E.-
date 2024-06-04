@@ -2,16 +2,16 @@ var nav = document.querySelector("nav");
 nav.addEventListener("mouseenter", function(){
     var tl=gsap.timeline();
     tl.to("#nav-bottom" ,{
-        height:"24vh",
+        height:"26vh",
         duration:"0.5s"
     })
     tl.to(".options h5 " ,{
         display:"block",
-        duration:"1s"
+        duration:"0.1s"
     })
     tl.to(".options h5 span", {
-        y: 20,
-         duration:0.3,
+        y: 0,
+        //  duration:2,
         stagger: {
             amount: 0.5
         }
@@ -22,11 +22,11 @@ nav.addEventListener("mouseleave", function(){
   
     tl1.to(".options h5 " ,{
         display:"none",
-        duration:"1s"
+        duration:"0.1s"
     })
     tl1.to("#nav-bottom" ,{
         height:"0vh",
-        duration:"0.5s" 
+        duration:"0.3s"
     })
     tl1.to(".options h5 span", {
         y: 25,
