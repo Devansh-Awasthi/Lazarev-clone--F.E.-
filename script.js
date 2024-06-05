@@ -32,7 +32,7 @@ nav.addEventListener("mouseleave", function(){
     })
     tl1.to("#nav-bottom" ,{
         height:"0vh",
-        duration:"0.3s"
+        duration:"0.5s"
     })
     
 })
