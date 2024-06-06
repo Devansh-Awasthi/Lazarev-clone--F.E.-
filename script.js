@@ -68,5 +68,25 @@ ins.forEach(function(a){
 })
 
 }
-p1animation();
-p2animation();
+function p3animation(){
+var cover = document.querySelector("#p3 #p3-cover");
+var vid=document.querySelector("#p3 video");
+cover.addEventListener("click", function(){
+    vid.play();
+        gsap.to(vid ,{
+            transform:"scaleX(1) scaleY(1)",
+            opacity:1,
+        })
+})    
+vid.addEventListener("click", function(){
+    vid.pause();
+        gsap.to(vid ,{
+            transform:"scaleX(0.7) scaleY(0)",
+            opacity:0,
+        })
+})    
+
+}
+p3animation();
+// p1animation();
+// p2animation();
