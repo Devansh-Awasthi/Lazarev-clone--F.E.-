@@ -45,6 +45,7 @@ ins.forEach(function(a){
     a.addEventListener("mouseenter", function(){
         // console.log(a.childNodes  );
         gsap.to(a.childNodes[7],{
+            display:"block",
             opacity:1,
             scale:1
         })
@@ -53,6 +54,7 @@ ins.forEach(function(a){
     a.addEventListener("mouseleave", function(){
         // console.log(a.childNodes  );
         gsap.to(a.childNodes[7],{
+            display: "none",
             opacity:0,
             scale:0
         })
