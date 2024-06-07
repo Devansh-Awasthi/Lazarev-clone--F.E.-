@@ -9,6 +9,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
@@ -256,6 +257,16 @@ position: absolute;
   top: -50%;
   height: 10px;
 }
+.inside #hidden{
+  position: relative;
+  left: 98%;
+  top: -50%;
+  height: 10px;
+}
+.inside:hover .inside #hidden{
+  border-top:1px solid #ffffff;
+
+}
 .inside img{
   height: 7vw;
   width: 7vw;
@@ -337,4 +348,45 @@ position: absolute;
 #p3#p3-cover#icon:hover#p3 h5{
   opacity: 1;
   transform: translateY(0%);
+}
+#p4{
+  height: 100vh;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+  padding:5vw 5vw;
+  padding-bottom: 0vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#p4-right1{
+  height: 100%;
+  width: 50%;
+ 
+ 
+}
+#p4-right1 h4{
+  margin: 4vh 0vh;
+  color: #9d9999;
+  font-size:1vw;
+  font-weight: 500;
+}
+#p4-right1 p{
+  color: #111111;
+  margin-bottom: 7vh;
+  font-size: 1.5vw;
+}
+#p4-left1{
+  height: 100%;
+  width: 40%;
+  
+}
+#p4-left1 h1{
+  margin: 4vh 0vh;
+  font-size: 3.1vw;
+  font-weight: 600;
+  line-height: 3.1vw;
+  color: #111111;
+  margin-right: 10vw;
 }

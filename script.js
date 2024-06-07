@@ -1,3 +1,15 @@
+// function arrow(){
+//     var ar = document.querySelector(".inside");
+//     ar.addEventListener("mouseenter", function(){
+//         var tl=gsap.timeline();
+//         tl.to(".inside #hidden",{
+//             // y: 0,
+//             display:"inline-block",    
+//             duration:"0.5s"
+//         })
+//     })
+// }
+// arrow();
 function p1animation(){
 var nav = document.querySelector("nav");
 nav.addEventListener("mouseenter", function(){
