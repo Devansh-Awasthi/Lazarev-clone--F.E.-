@@ -9,7 +9,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 nav {
@@ -350,21 +350,23 @@ position: absolute;
   transform: translateY(0%);
 }
 #p4{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #FFFFFF;
   position: relative;
   padding:5vw 5vw;
+  
+}
+#d1{
   padding-bottom: 0vw;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  position: relative;
 }
 #p4-right1{
   height: 100%;
   width: 50%;
- 
- 
 }
 #p4-right1 h4{
   margin: 4vh 0vh;
@@ -378,9 +380,13 @@ position: absolute;
   font-size: 1.5vw;
 }
 #p4-left1{
+  /* background-color: #333; */
   height: 100%;
   width: 40%;
-  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 #p4-left1 h1{
   margin: 4vh 0vh;
@@ -389,4 +395,45 @@ position: absolute;
   line-height: 3.1vw;
   color: #111111;
   margin-right: 10vw;
+  
+}
+.bottom1{
+  height: 100vh;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+}
+#d2{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 10vh;
+}
+#d2 h1{
+  color: #111111;
+  
+}
+.row{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.row .block,.row2 .block2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 40vh;
+  width: 29vw;
+  background-color:#F5F5F5;
+}
+.row2{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; 
 }
