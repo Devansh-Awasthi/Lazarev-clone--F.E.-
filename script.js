@@ -99,6 +99,29 @@ vid.addEventListener("click", function(){
 })    
 
 }
+function p4animationd3(){
+    var covers = document.querySelectorAll(".d3-right1");
+
+    covers.forEach(function(cover) {
+      var vid = cover.querySelector("video");
+      
+      cover.addEventListener("mouseenter", function() {
+        vid.play();
+        gsap.to(vid, {
+          opacity: 1,
+        });
+      });
+  
+      cover.addEventListener("mouseleave", function() {
+        vid.pause();
+        gsap.to(vid, {
+          opacity: 0,
+        });
+      });
+    });
+  
+}
+p4animationd3();
 p3animation();
 // p1animation();
 // p2animation();
