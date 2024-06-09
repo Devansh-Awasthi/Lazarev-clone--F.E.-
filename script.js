@@ -109,18 +109,43 @@ function p4animationd3(){
         vid.play();
         gsap.to(vid, {
           opacity: 1,
+       
         });
       });
   
       cover.addEventListener("mouseleave", function() {
         vid.pause();
         gsap.to(vid, {
-          opacity: 0,
+            currentTime: 0
         });
       });
     });
   
 }
+function p4animationcase3(){
+    var covers = document.querySelectorAll(".new-vid");
+    covers.forEach(function(cover) {
+      var vid = cover.querySelector("video");
+
+      cover.addEventListener("mouseenter", function() {
+        vid.play();
+
+        gsap.to(cover, {
+          height:"80vh",
+          currentTime: 0
+        });
+      });
+  
+      cover.addEventListener("mouseleave", function() {
+        vid.pause();
+           gsap.to(cover, {
+             height: "42vh",
+          currentTime: 0
+        });
+      });
+    });
+}
+p4animationcase3();
 p4animationd3();
 p3animation();
 // p1animation();
