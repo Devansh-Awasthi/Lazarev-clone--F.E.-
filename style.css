@@ -469,6 +469,7 @@ position: absolute;
   height: 40vw;
   width: 27vw;
   display: flex;
+  padding-bottom: 90px;
   flex-direction: column;
   border-top:1px solid #92929296;
   justify-content: space-between;
@@ -486,7 +487,8 @@ position: absolute;
   font-size: 1.2vw;
   color: #111111;
   font-weight: 300;
-  padding-bottom: 40vh;
+  padding-top: 60px;
+  padding-bottom: 35vh;
   margin-right: 5vw;
 }
 .d3-right1{
@@ -509,6 +511,30 @@ position: absolute;
   padding-left: 5px;
   height: 18px;
   width: 18px;
+}
+#d3-button{
+  background-color: #4F5BFF;
+  height: 4vw;
+  width: 20vw;
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 50px;
+  flex-direction: row;
+  border:none;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+#d3-button h6{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+  font-size: 0.8vw;
+  margin-left: 5vw;
+}
+#d3-button svg{
+  margin-top: 5px;
+margin-left: 50px;
+fill:#FFFFFF
 }
 .c3{
   
