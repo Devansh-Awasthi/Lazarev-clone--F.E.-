@@ -665,14 +665,43 @@ fill:#FFFFFF
   padding: 3px 9px;
 }
 .feat-full{
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top:2.5vh ;
+}
+#a1{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  gap: 50px;
+  align-items: flex-start;
+  padding:1.5vw ;
+  margin-right: 4.5vw;
+  border-bottom:1px solid #9d9999;
 }
-.feat-full h2{
-  font-size: 1vw;
+#a1 h2{
+  /* padding-right: 8vw; */
+  font-size: 1.5vw;
   font-weight: 300;
   color: white;
+}
+#a1 p{
+  padding-left:5vw;
+ padding-right: 30vh;
+  font-size: 0.8vw;
+  font-weight: 300;
+}
+
+#a1 svg{
+  fill: #fff;
+  position: relative;
+  left: 0%;
+  top: 0%;
+  height: 20px;
+  width: 40px;
+  border:none;
+  
 }
