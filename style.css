@@ -456,7 +456,7 @@ position: absolute;
   padding-top: 10vh;
 
 }
-#case1,#case2,#case3{
+#case1,#case2,#case3,#p5-case1{
   min-height: 100%;
   width: 100%;
   display: flex;
@@ -507,12 +507,14 @@ position: absolute;
   padding-bottom: 15vh;
   margin-right: 5vw;
 }
+
 .d3-right1 h3{
   padding-top: 8vw;
   font-size: 1vw;
   font-weight: 300;
   color:  #92929296;
 }
+
 .d3-right1 video {  
   height: 100%;
   width: 100%;
@@ -627,4 +629,50 @@ fill:#FFFFFF
   margin:10vw #111111;
   line-height: 4.4vw;
   font-weight: 600;
+}
+.p5-d3-left1{
+  height: 40vw;
+  width: 27vw;
+}
+.p5-d3-right1{
+  min-height: 100%;
+  width: 60vw;
+}
+.p5-d3-right1 svg{
+  position: relative;
+  left: 90%;
+  top: 0%;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #9d9999;
+}
+.p5-d3-right1 h2{
+  color: #FFFFFF;
+  font-size: 3.6vw;
+  font-weight: 700;
+}
+#feat{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 0.8vh;
+  gap: 2px;
+}
+#feat h6{
+  border: 1px solid #92929296;
+  border-radius: 20px;
+  padding: 3px 9px;
+}
+.feat-full{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+.feat-full h2{
+  font-size: 1vw;
+  font-weight: 300;
+  color: white;
 }
