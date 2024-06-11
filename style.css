@@ -681,15 +681,18 @@ fill:#FFFFFF
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding:1.5vw ;
+  padding-top:1.5vw ;
+  padding-left: 1.5vh;
   padding-bottom: 5vw;
   margin-right: 4.5vw;
   border-bottom:1px solid #9d9999;
+  overflow-x: hidden;
 }
 #a1 h2{
   /* padding-right: 8vw; */
   font-size: 1.5vw;
   font-weight: 300;
+  
   position: relative;
 z-index: 8;
   color: white;
@@ -707,9 +710,10 @@ z-index: 8;
   top: 63.25%;
   width: 60%;
   left: 39.2%;
-  transform: translateY(-0%);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
   height: 9.75%;
-  background-color:  rgb(144, 144, 144);
+  background-color: #1F1F1F;
   z-index: 6;
   opacity: 0;
   
@@ -718,10 +722,11 @@ z-index: 8;
   position: absolute;
   top: 73%;
   width: 60%;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
   left: 39.2%;
   height: 8.90%;
-  background-color:  rgb(144, 144, 144);
+  background-color: #1F1F1F;
   z-index: 6;
   opacity: 0;
   
@@ -731,9 +736,10 @@ z-index: 8;
   top: 81.5%;
   width: 60%;
   left: 39.2%;
-  transform: translateY(-100%);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
   height: 9%;
-  background-color: rgb(144, 144, 144);
+  background-color:#1F1F1F;
   z-index: 6;
   opacity: 0;
   
@@ -742,31 +748,31 @@ z-index: 8;
   top: 90%;
   width: 60%;
   left: 39.2%;
-  transform: translateY(-100%);
- 
+  transform: translateX(-100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
   height: 9%;
-  background-color:  rgb(144, 144, 144);
+  background-color: #1F1F1F;
   z-index: 6;
   opacity: 0;
   
 }
-#a4:hover .over{
-transform: translateY(0);
+#a4:hover .over {
+transform: translateX(0);
 opacity: 1;
 
 }
 #a2:hover .over{
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
   
   }
   #a1:hover .over{
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
     
     }
     #a3:hover .over{
-      transform: translateY(0);
+      transform: translateX(0);
       opacity: 1;
       
       }
@@ -778,7 +784,8 @@ opacity: 1;
   height: 20px;
   width: 40px;
   border:none;
-  
+  position: relative;
+  z-index: 8;
 }
 #a2{
   display: flex;
@@ -815,6 +822,8 @@ z-index: 8;
   height: 20px;
   width: 40px;
   border:none;
+  position: relative;
+  z-index: 8;
 }
 #a3{
   display: flex;
@@ -850,6 +859,8 @@ z-index: 8;
   top: 0%;
   height: 20px;
   width: 40px;
+  position: relative;
+  z-index: 8;
   border:none;
 }
 #a4{
@@ -887,5 +898,7 @@ z-index: 8;
   height: 20px;
   width: 40px;
   border:none;
+  position: relative;
+  z-index: 8;
 }
 
