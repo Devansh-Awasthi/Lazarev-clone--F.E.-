@@ -1061,3 +1061,9 @@ padding: 5vh 0vh;
   padding: 0.5vw 0.7vw;
   border-radius: 80%;
 }
+#p7{
+  min-height: 100vh;
+  width: 100%;
+  padding-left: 2.5vw;
+  background-color: #220a98;
+}

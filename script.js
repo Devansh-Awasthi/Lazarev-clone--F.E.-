@@ -145,8 +145,23 @@ function p4animationcase3(){
       });
     });
 }
+function p6scrollanimation(){
+    gsap.from(".p6-bottom-case2 h4",{
+        x: 0,
+        duration:1,
+        scrollTrigger:{
+            trigger:".p6-bottom-case2",
+            scroller:"body",
+            // markers: true,
+            start:"top 80%",
+            end:"top 10%", 
+            scrub: true
+        }
+    })
+}
 p4animationcase3();
 p4animationd3();
 p3animation();
+p6scrollanimation();
 // p1animation();
 // p2animation();
