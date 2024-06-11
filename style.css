@@ -660,6 +660,7 @@ fill:#FFFFFF
   gap: 2px;
   margin-right: 50px;
   padding-bottom: 1.3vw;
+  overflow: hidden;
   border-bottom: 1px solid #92929296;
 }
 #feat h6{
@@ -673,6 +674,7 @@ fill:#FFFFFF
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
   align-items: flex-start;
   padding-top:2.5vh ;
 }
@@ -685,8 +687,9 @@ fill:#FFFFFF
   padding-left: 1.5vh;
   padding-bottom: 5vw;
   margin-right: 4.5vw;
+  overflow: hidden;
   border-bottom:1px solid #9d9999;
-  overflow-x: hidden;
+  
 }
 #a1 h2{
   /* padding-right: 8vw; */
@@ -707,10 +710,11 @@ z-index: 8;
 }
 #a1 .over{
   position: absolute;
-  top: 63.25%;
+  top: 63.50%;
   width: 60%;
   left: 39.2%;
-  transform: translateX(-100%);
+ display: none;
+  transform: translateY(-100%);
   transition: transform 0.3s ease, opacity 0.3s ease;
   height: 9.75%;
   background-color: #1F1F1F;
@@ -722,7 +726,8 @@ z-index: 8;
   position: absolute;
   top: 73%;
   width: 60%;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
+  overflow: hidden;
   transition: transform 0.3s ease, opacity 0.3s ease;
   left: 39.2%;
   height: 8.90%;
@@ -735,8 +740,9 @@ z-index: 8;
   position: absolute;
   top: 81.5%;
   width: 60%;
+  overflow: hidden;
   left: 39.2%;
-  transform: translateX(-100%);
+  transform: translateY(-100%);
   transition: transform 0.3s ease, opacity 0.3s ease;
   height: 9%;
   background-color:#1F1F1F;
@@ -748,7 +754,8 @@ z-index: 8;
   top: 90%;
   width: 60%;
   left: 39.2%;
-  transform: translateX(-100%);
+  overflow: hidden;
+  transform: translateY(-100%);
   transition: transform 0.3s ease, opacity 0.3s ease;
   height: 9%;
   background-color: #1F1F1F;
@@ -757,7 +764,7 @@ z-index: 8;
   
 }
 #a4:hover .over {
-transform: translateX(0);
+transform: translateY(0);
 opacity: 1;
 
 }
@@ -767,9 +774,9 @@ opacity: 1;
   
   }
   #a1:hover .over{
-    transform: translateX(0);
+    transform: translateY(0);
     opacity: 1;
-    
+    display: inline-block;
     }
     #a3:hover .over{
       transform: translateX(0);
@@ -794,8 +801,10 @@ opacity: 1;
   align-items: flex-start;
   padding:1.5vw ;
   padding-bottom: 5vw;
+  overflow: hidden;
   margin-right: 4.5vw;
   border-bottom: 1px solid #92929296;
+  overflow: hidden;
 }
 #a2 h2{
   /* padding-right: 8vw; */
@@ -831,6 +840,7 @@ z-index: 8;
   justify-content: space-between;
   align-items: flex-start;
   padding:1.5vw ;
+  overflow: hidden;
   padding-bottom: 5vw;
   margin-right: 4.5vw;
   border-bottom: 1px solid #92929296;
@@ -901,4 +911,51 @@ z-index: 8;
   position: relative;
   z-index: 8;
 }
+summary::marker{
+  content: "";
+}
+#p6{
+  min-height: 100vh;
+  width: 100%;
+  padding-left: 2.5vw;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
+ 
+}
+#p6 h1{
+  padding-top: 20vh;
+  font-size: 5.6vw;
+  font-weight: 700;
+  color: #111;
+  line-height: 4.5vw;
+ 
+}
+
+#p6-full{
+  padding: 14vh;
+  width:100vw;
+  display: flex;
+  justify-content:space-between ;
+  align-items:flex-start;
+  flex-direction: row;
+}
+.p6-l{
+
+  height: 60vh;
+  width:20%;
+background-color:red;
+}
+.p6-r{
+  height: 60vh;
+  width:75%;
+
+background-color:rgb(0, 255, 115);
+}
+.p6-r p{
+  font-size: 1.3vw;
+  margin-right: 47vh;
+}
