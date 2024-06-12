@@ -42,7 +42,10 @@ align-items: center; */
   position: relative;
   z-index: 10;
 }
-
+.nav-elem h4:hover,.nav-elem h5 span:hover{
+  color: #4F5BFF;
+  cursor: pointer;
+}
 .options h4 {
   font-size: 0.73vw;
   text-transform: uppercase;
@@ -325,6 +328,7 @@ position: absolute;
   font-size: 2.5vw;
   color: #111111;
 }
+
 #p3 video{
   height: 100%;
   width: 100%;
@@ -470,10 +474,19 @@ position: absolute;
   width: 27vw;
   display: flex;
   padding-bottom: 90px;
+  padding-top: 8vw;
+  padding-left: 90px;
   flex-direction: column;
   border-top:1px solid #92929296;
   justify-content: space-between;
   align-items:flex-start;
+}
+.d3-left1 button{
+  height: 10%;
+  width: 90%;
+  border-radius: 50px;
+  border: none;
+  background-color: #0da34e;
 }
 .d3-left1:hover{
   border-top:1px solid #111111;
@@ -1065,5 +1078,6 @@ padding: 5vh 0vh;
   min-height: 100vh;
   width: 100%;
   padding-left: 2.5vw;
-  background-color: #220a98;
+  background-color:#111111;
+  
 }

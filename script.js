@@ -158,10 +158,57 @@ function p6scrollanimation(){
             scrub: true
         }
     })
-}
-p4animationcase3();
+    gsap.from(".p6-bottom-case3 h4",{
+        x: 0,
+        duration:1,
+        scrollTrigger:{
+            trigger:".p6-bottom-case3",
+            scroller:"body",
+            // markers: true,
+            start:"top 80%",
+            end:"top 10%", 
+            scrub: true
+        }
+    })
+    gsap.from(".p6-bottom-case4 h4",{
+        x: 0,
+        duration:1,
+        scrollTrigger:{
+            trigger:".p6-bottom-case4",
+            scroller:"#main",
+            // markers: true,
+            start:"top 80%",
+            end:"top 10%", 
+            scrub: true
+        }
+    })
+
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     gsap.registerPlugin(ScrollTrigger);
+    
+    //     ScrollTrigger.create({
+    //       trigger: "#case1",
+    //       start: "top 20%",
+    //       end: "top 60%",
+    //       pin: ".d3-left1 button",
+    //       markers: true // Optional: Show markers for debugging
+    //     });
+    //   });
+document.addEventListener('DOMContentLoaded', function() {
+    gsap.registerPlugin(ScrollTrigger);
+    ScrollTrigger.create({
+      trigger: "#p6-full",
+      start: "top 50%",
+      end: "top -20%",
+      pin: ".p6-l button",
+      markers: true // Optional: Show markers for debugging
+    });
+  });
+
+  }
+    p4animationcase3();
 p4animationd3();
 p3animation();
 p6scrollanimation();
-// p1animation();
-// p2animation();
+p1animation();
+p2animation();
