@@ -206,9 +206,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   }
+ function p7scrollanimation(){
+
+ }
     p4animationcase3();
 p4animationd3();
 p3animation();
 p6scrollanimation();
+p7scrollanimation();
 // p1animation();
 // p2animation();

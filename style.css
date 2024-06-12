@@ -987,10 +987,8 @@ summary::marker{
 display: flex;
 align-items: flex-start;
 justify-content:center;
-
 }
 .p6-bottom-case1,.p6-bottom-case2,.p6-bottom-case3,.p6-bottom-case4,.p6-bottom-case5{
-
   height: 58vh;
  border-right: 1px solid #92929296 ;
 }
@@ -1077,14 +1075,18 @@ padding: 5vh 0vh;
 #p7{
   min-height: 100vh;
   width: 100%;
-  padding-top: 20vh;
-  padding-left: 2.5vw;
+
+  padding:20vh 6vw;
   background-color:#111111;
+  display: flex;
+ 
+align-items: flex-start;
+  justify-content: space-between;
 }
 .p7-left{
   height: 80vh;
   width: 40vw;
-  background-color: #4F5BFF;
+  position: sticky;
   display: flex;
   flex-direction: column;
 align-items: flex-start;
@@ -1095,3 +1097,53 @@ align-items: flex-start;
   font-size: 0.8vw;
   margin-right: 10vw;
 }
+.p7-left h1{
+  font-size: 2.9vw;
+  line-height: 3vw;
+}
+.p7-right{
+  height: 80vh;
+  width: 50vw;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+align-items: flex-start;
+  justify-content: space-between;
+
+}
+.testimony{
+  min-height: 70%;
+  width: 100%;
+  padding:3vw 1vw 13vh 1vw ;
+  display: flex;
+  flex-direction: column;
+  border-top:1px solid #92929296;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.testimony h6{
+padding-bottom: 4vw;
+}
+.testimony h{
+  padding-bottom: 4vw;
+  }
+.person{
+  padding-top: 10vh;
+  display: flex;
+align-items: flex-start;
+  justify-content: space-between;
+}
+#name h3{
+font-size: 0.8vw;
+font-weight: 500;
+}
+#name h4{
+  font-size: 0.7vw;
+  font-weight: 500;
+  }
+.person img{
+  height:50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
