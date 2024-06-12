@@ -1152,6 +1152,10 @@ font-weight: 500;
   width: 100vw;
   background-image: url(https://img.freepik.com/premium-photo/close-up-flower-black-background-generative-ai_791316-14159.jpg);
   background-size:cover;
+  display: flex;
+  align-items: flex-start;
+    justify-content: space-between;
+    padding: 3vw;
 
 }
 .p7-head{
@@ -1172,6 +1176,51 @@ font-weight: 500;
   margin-bottom: 23vh;
  
   border-radius: 50%;
+}
+.p7-matter{
+  height: 60vh;
+  width: 40vw;
+ display: flex;
+ padding:3vw ;
+flex-direction: column;
+ align-items: flex-end;
+    justify-content: space-between;
+}
+.p7-matter svg{
+  height: 125px;
+  width: 125px;
+}
+.p7-matter p{
+  font-size: 0.9vw;
+margin-left: 2vw;
+text-align: right;
+}
+.trophy-page{
+  min-height: 100vh;
+  width: 100%;
+  padding: 12vw 6vw;
+  background-color:#111111;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.t-p-left{
+  height: 100vh;
+  width: 23vw;
+  background-color: #0da34e;
+}
+.t-p-right{
+  height: 100vh;
+  width: 59vw;
+  background-color: #0da34e;
+}
+.t-p-right h1{
+  font-size: 2.9vw;
+  line-height: 2.3vw;
+}
+.t-p-awards {
+  
 }
 #p8{
   min-height: 100vh;
