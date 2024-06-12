@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
       start: "top 50%",
       end: "top -20%",
       pin: ".p6-l button",
-      markers: true // Optional: Show markers for debugging
+    //   markers: true // Optional: Show markers for debugging
     });
   });
 
@@ -210,5 +210,5 @@ document.addEventListener('DOMContentLoaded', function() {
 p4animationd3();
 p3animation();
 p6scrollanimation();
-p1animation();
-p2animation();
+// p1animation();
+// p2animation();

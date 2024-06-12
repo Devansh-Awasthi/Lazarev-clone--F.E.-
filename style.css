@@ -1077,7 +1077,21 @@ padding: 5vh 0vh;
 #p7{
   min-height: 100vh;
   width: 100%;
+  padding-top: 20vh;
   padding-left: 2.5vw;
   background-color:#111111;
-  
+}
+.p7-left{
+  height: 80vh;
+  width: 40vw;
+  background-color: #4F5BFF;
+  display: flex;
+  flex-direction: column;
+align-items: flex-start;
+  justify-content: space-between;
+}
+.p7-left p{
+  padding-bottom: 20vh;
+  font-size: 0.8vw;
+  margin-right: 10vw;
 }
