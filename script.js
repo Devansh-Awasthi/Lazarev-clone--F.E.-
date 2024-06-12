@@ -207,7 +207,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }
  function p7scrollanimation(){
-
+    gsap.to(".p7-right", {
+        scrollTrigger: {
+          trigger: ".p7-left",
+          start: "top 10%", // When the top of .p7-left hits the top of the viewport
+          end: "bottom 50%", // When the bottom of .p7-left hits the top of the viewport
+          pin: true,
+          scrub: true,
+        //   markers: true, // Remove this line to hide markers
+        }
+      });
  }
     p4animationcase3();
 p4animationd3();
