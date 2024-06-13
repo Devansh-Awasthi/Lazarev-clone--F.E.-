@@ -1206,7 +1206,7 @@ text-align: right;
   justify-content: space-between;
 }
 .t-p-left{
-  height: 100vh;
+  min-height: 130vh;
   width: 23vw;
   background-color: #0da34e;
 }
@@ -1280,6 +1280,7 @@ color: #F5F5F5;
  min-height: 10vh;
   width: 60vw;
   /* color: #F5F5F5; */
+  border-bottom: 1px solid #4F5BFF;
   display: flex;
   flex-direction: column;
    align-items: flex-start;
