@@ -218,10 +218,47 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
  }
-    p4animationcase3();
+ function p7_2023animation() {
+    var panels = document.querySelectorAll("#panel1");
+
+    panels.forEach(function(panel) {
+        var img = panel.querySelector("#panel1>img");
+        
+        panel.addEventListener("mouseenter", function() {
+            gsap.to(img, {
+                opacity: 1,
+                scale: 1,
+                display: "block"
+            });
+        });
+
+        panel.addEventListener("mouseleave", function() {
+            gsap.to(img, {
+                opacity: 0,
+                scale: 0,
+                display: "none"
+            });
+        });
+
+        panel.addEventListener("mousemove", function(event) {
+            var rect = panel.getBoundingClientRect();
+            var x = event.clientX - rect.left - (img.width / 2);
+            var y = event.clientY - rect.top - (img.height / 2);
+            var angle = (event.clientX - rect.left) / rect.width * 60 - 30; // -30 to 30 degrees
+
+            gsap.to(img, {
+                x: x * 0.3, // Move less by applying a fraction
+                y: y * 0.1, // Move less by applying a fraction
+                rotate: angle*0.05, // Apply calculated rotation angle
+            });
+        });
+    });
+}
+p4animationcase3();
 p4animationd3();
 p3animation();
 p6scrollanimation();
 p7scrollanimation();
+p7_2023animation();
 // p1animation();
 // p2animation();
