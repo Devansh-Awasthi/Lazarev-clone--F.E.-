@@ -116,15 +116,36 @@ nav button svg {
   text-transform: uppercase;
   font-weight: 700;
   line-height: 8vw;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-#p1 h1 svg {
-  width: 6vw;
-  height: 6vw;
+
+#p1 h1 span{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 7.5vw; /* Adjusted size for the circle */
+  width: 7.5vw; /* Ensure the circle is perfect */
   background-color: #0da34e;
   border-radius: 50%;
+  transition: all 0.8s ease
+  /* margin-bottom: 130px; */
 }
-#p1 h1 span:hover #p1 h1 span {
+#p1 h1 span i{
+  font-size:4.2vw;
+  text-align: center; /* Center the icon horizontally */
+    vertical-align: middle;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+#p1 h1 span:hover i{
   transform: rotate(30deg);
+
+}
+#p1 h1 span:hover span{
+  height: 6.8vw; /* Adjusted size for the circle */
+  width: 6.8vw;
 }
 #p1 p {
   margin-top: 2vw;
@@ -1208,12 +1229,20 @@ text-align: right;
 .t-p-left{
   min-height: 130vh;
   width: 23vw;
-  background-color: #ff00f2;
+
 }
 .t-p-right{
   min-height: 100vh;
   width: 59vw;
   
+}
+.t-p-left button{
+  height: 8vh;
+  width: 70%;
+  margin-left: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: #0da34e;
 }
 .t-p-right h1{
   font-size: 2.9vw;
