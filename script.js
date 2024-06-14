@@ -223,10 +223,10 @@ document.addEventListener('DOMContentLoaded', function() {
         gsap.registerPlugin(ScrollTrigger);
         ScrollTrigger.create({
           trigger: ".t-p-left",
-          start: "top 80%",
-          end: "top 20%",
+          start: "top 20%",
+          end: "bottom 20%",
           pin: ".t-p-left button",
-          markers: true // Optional: Show markers for debugging
+        //   markers: true // Optional: Show markers for debugging
         });
       });
     var panels = document.querySelectorAll("#panel1");
