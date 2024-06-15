@@ -10,6 +10,46 @@
 //     })
 // }
 // arrow();
+function locomotive(){
+    gsap.registerPlugin(ScrollTrigger);
+const locoScroll = new LocomotiveScroll({
+  el: document.querySelector("#main"),
+  smooth: true,
+
+  // for tablet smooth
+  tablet: { smooth: true },
+
+  // for mobile
+  smartphone: { smooth: true }
+});
+locoScroll.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy("#main", {
+  scrollTop(value) {
+    return arguments.length
+      ? locoScroll.scrollTo(value, 0, 0)
+      : locoScroll.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return {
+      top: 0,
+      left: 0,
+      width: window.innerWidth,
+      height: window.innerHeight
+    };
+  }
+
+  // follwoing line is not required to work pinning on touch screen
+
+  /* pinType: document.querySelector(".smooth-scroll").style.transform
+    ? "transform"
+    : "fixed"*/
+});
+ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+
+ScrollTrigger.refresh();
+
+}
 function p1animation(){
 var nav = document.querySelector("nav");
 nav.addEventListener("mouseenter", function(){
@@ -50,7 +90,10 @@ nav.addEventListener("mouseleave", function(){
     
 })
 }
+function loadingAnimation() {
+    
 
+}
 function p2animation(){
 var ins=document.querySelectorAll(".inside");
 ins.forEach(function(a){
@@ -151,7 +194,7 @@ function p6scrollanimation(){
         duration:1,
         scrollTrigger:{
             trigger:".p6-bottom-case2",
-            scroller:"body",
+            scroller:"#main",
             // markers: true,
             start:"top 80%",
             end:"top 10%", 
@@ -163,7 +206,7 @@ function p6scrollanimation(){
         duration:1,
         scrollTrigger:{
             trigger:".p6-bottom-case3",
-            scroller:"body",
+            scroller:"#main",
             // markers: true,
             start:"top 80%",
             end:"top 10%", 
@@ -224,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ScrollTrigger.create({
           trigger: ".t-p-left",
           start: "top 20%",
-          end: "bottom 20%",
+          end: "bottom 28%",
           pin: ".t-p-left button",
         //   markers: true // Optional: Show markers for debugging
         });
@@ -264,11 +307,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 }
+locomotive();
 p4animationcase3();
 p4animationd3();
 p3animation();
 p6scrollanimation();
 p7scrollanimation();
 p7_2023animation();
+
 // p1animation();
 // p2animation();
