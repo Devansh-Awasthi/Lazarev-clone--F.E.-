@@ -112,13 +112,19 @@ function p2animation(){
 var ins=document.querySelectorAll(".inside");
 ins.forEach(function(a){
     a.addEventListener("mouseenter", function(){
-        // console.log(a.childNodes  );
+        console.log(a.childNodes);
         gsap.to(a.childNodes[7],{
             display:"block",
             opacity:1,
             scale:1
         })
         
+    })
+    a.addEventListener( "mousemove", function(dets){    
+        gsap.to(a.childNodes[7],{
+            x:dets.x - a.getBoundingClientRect().x-35,
+            y: dets.y - a.getBoundingClientRect().y-120 ,            
+        })
     })
     a.addEventListener("mouseleave", function(){
         // console.log(a.childNodes  );
@@ -127,12 +133,7 @@ ins.forEach(function(a){
             opacity:0,
             scale:0
         })
-    a.addEventListener( "mousemove", function(dets){    
-        gsap.to(a.childNodes[7],{
-            x:dets.x - a.getBoundingClientRect().x-35,
-            y: dets.y - a.getBoundingClientRect().y-120 ,            
-        })
-    })
+   
 })
 })
 
@@ -445,16 +446,17 @@ document.addEventListener('DOMContentLoaded', function() {
             cover.addEventListener("mouseenter", function() {
                 vid.play();
                 gsap.to(cover, {
+                 
                     height: "80vh",
-                    currentTime: 0
+                   
                 });
             });
 
             cover.addEventListener("mouseleave", function() {
                 vid.pause();
+                vid.currentTime=0;
                 gsap.to(cover, {
                     height: "42vh",
-                    currentTime: 0
                 });
             });
         });
