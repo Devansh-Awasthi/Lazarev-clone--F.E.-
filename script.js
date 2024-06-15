@@ -138,25 +138,25 @@ ins.forEach(function(a){
 })
 
 }
-// function p3animation(){
-// var cover = document.querySelector("#p3 #p3-cover");
-// var vid=document.querySelector("#p3 video");
-// cover.addEventListener("click", function(){
-//     vid.play();
-//         gsap.to(vid ,{
-//             transform:"scaleX(1) scaleY(1)",
-//             opacity:1,
-//         })
-// })    
-// vid.addEventListener("click", function(){
-//     vid.pause();
-//         gsap.to(vid ,{
-//             transform:"scaleX(0.7) scaleY(0)",
-//             opacity:0,
-//         })
-// })    
+function p3animation(){
+var cover = document.querySelector("#p3 #p3-cover");
+var vid=document.querySelector("#p3 video");
+cover.addEventListener("click", function(){
+    vid.play();
+        gsap.to(vid ,{
+            transform:"scaleX(1) scaleY(1)",
+            opacity:1,
+        })
+})    
+vid.addEventListener("click", function(){
+    vid.pause();
+        gsap.to(vid ,{
+            transform:"scaleX(0.7) scaleY(0)",
+            opacity:0,
+        })
+})    
 
-// }
+}
 // function p4animationd3(){
 //     var covers = document.querySelectorAll(".d3-right1");
 
@@ -337,12 +337,12 @@ document.addEventListener('DOMContentLoaded', function() {
 // locomotive();
 // p4animationcase3();
 // p4animationd3();
-// p3animation();
+p3animation();
 loadingAnimation();
-// p7scrollanimation();
-// p7_2023animation();
-p1animation();
-p2animation();
+// // p7scrollanimation();
+// // p7_2023animation();
+// p1animation();
+// p2animation();
 document.addEventListener('DOMContentLoaded', function() {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -386,11 +386,18 @@ document.addEventListener('DOMContentLoaded', function() {
         trigger: ".t-p-left",
         scroller: "#main",
         start: "top 20%",
-        end: "bottom 28%",
+        end: "bottom 18%",
         pin: ".t-p-left button",
         // markers: true // Optional: Show markers for debugging
     });
-
+    ScrollTrigger.create({
+        trigger: "#p5 .d3-left1",
+        scroller: "#main",
+        start: "top 70%",
+        end: "top 5%",
+        pin: "#case1 .d3-left1 button",
+        // markers: true // Optional: Show markers for debugging
+    });
     gsap.to(".p7-right", {
         scrollTrigger: {
             trigger: ".p7-left",
@@ -463,4 +470,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     p4animationcase3();
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const details = document.querySelectorAll('.dets');
+
+    details.forEach(detail => {
+        detail.addEventListener('toggle', function() {
+            if (detail.open) {
+                details.forEach(item => {
+                    if (item !== detail && item.open) {
+                        item.open = false;
+                    }
+                });
+            }
+        });
+    });
 });
