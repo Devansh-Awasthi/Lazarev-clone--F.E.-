@@ -126,7 +126,7 @@ nav button svg {
   margin-left: 20px;
 }
 #p1 {
-  height: 120vh;
+  min-height: 100vh;
   width: 100%;
   /* padding-top: 50px; */
   position: relative;
