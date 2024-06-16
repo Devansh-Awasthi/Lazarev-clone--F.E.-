@@ -1,4 +1,6 @@
-
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
 function p1animation(){
 var nav = document.querySelector("nav");
 nav.addEventListener("mouseenter", function(){
